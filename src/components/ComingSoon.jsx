@@ -46,10 +46,9 @@ const ComingSoon = () => {
                 </div>
               </div>
               <p className="coming-soon-guide-text">
-                1 $DNA = 1 $DNA DNA is not an investment and has
-                <span className="coming-soon-guide-text-br">
-                  no financial value
-                </span>
+                Each test tube can be minted into a baby WaterBear. Baby
+                WaterBears has a supply of 6,666 supply
+                <span className="coming-soon-guide-text-br"></span>
               </p>
               <div className="coming-soon-guide-box">
                 <div className="coming-soon-guide-box-images">
@@ -61,11 +60,11 @@ const ComingSoon = () => {
                 </div>
               </div>
               <p className="coming-soon-guide-text">
-                Each test tube can be minted into a baby WaterBear. Baby
-                WaterBears has a supply of 6,666 supply
-                <span className="coming-soon-guide-text-br"></span>
+                1 $DNA = 1 $DNA DNA is not an investment and has
+                <span className="coming-soon-guide-text-br">
+                  no financial value
+                </span>
               </p>
-
               <img src={Coin} alt="" className="coming-soon-guide-coin" />
             </div>
           </div>
