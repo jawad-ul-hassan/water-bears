@@ -1,5 +1,5 @@
-import ComingSoonBearHat from '../assets/images/hero-bear-md.png';
-import ComingSoonBearWithoutHat from '../assets/images/hero-bear-sm.png';
+import ComingSoonBearHat from "../assets/images/hero-bear-md.png";
+import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
 
 const About = () => {
   return (
@@ -22,7 +22,6 @@ const About = () => {
                 alt=""
                 className="about-member-card-image"
               />
-              <p className="about-member-card-text">Name</p>
             </div>
             <div className="about-member-card">
               <p className="about-member-card-title">Artis</p>
@@ -31,7 +30,14 @@ const About = () => {
                 alt=""
                 className="about-member-card-image"
               />
-              <p className="about-member-card-text">Name</p>
+            </div>
+            <div className="about-member-card">
+              <p className="about-member-card-title">Rust Developer</p>
+              <img
+                src={ComingSoonBearHat}
+                alt=""
+                className="about-member-card-image"
+              />
             </div>
           </div>
         </div>

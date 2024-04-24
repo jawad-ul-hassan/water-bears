@@ -1,7 +1,7 @@
-import TwitterIcon from '../assets/svg/twitter.svg?react';
-import DiscordIcon from '../assets/svg/discord.svg?react';
-import TelegramIcon from '../assets/svg/telegram.svg?react';
-import WaterBearsLogo from '../assets/images/water-bears.png';
+import TwitterIcon from "../assets/svg/twitter.svg?react";
+import DiscordIcon from "../assets/svg/discord.svg?react";
+import TelegramIcon from "../assets/svg/telegram.svg?react";
+import WaterBearsLogo from "../assets/images/water-bears.png";
 
 const Header = () => {
   return (
@@ -25,13 +25,19 @@ const Header = () => {
             <a href="#about" className="header-navlink">
               About
             </a>
+            <a href="#mint" className="header-navlink">
+              Mint
+            </a>
+            <a href="#breed" className="header-navlink">
+              Breed
+            </a>
+            <a href="#stake" className="header-navlink">
+              Stake
+            </a>
           </nav>
           <div className="header-socials">
             <a href="#">
               <TwitterIcon />
-            </a>
-            <a href="#">
-              <DiscordIcon />
             </a>
             <a href="#">
               <TelegramIcon />

@@ -1,8 +1,8 @@
-import ContactLeftDecorator from '../assets/images/contact-left-decorator.png';
-import ContactRightDecorator from '../assets/images/contact-right-decorator.png';
-import DiscordIcon from '../assets/svg/discord.svg?react';
-import TelegramIcon from '../assets/svg/telegram.svg?react';
-import TwitterIcon from '../assets/svg/twitter.svg?react';
+import ContactLeftDecorator from "../assets/images/contact-left-decorator.png";
+import ContactRightDecorator from "../assets/images/contact-right-decorator.png";
+import DiscordIcon from "../assets/svg/discord.svg?react";
+import TelegramIcon from "../assets/svg/telegram.svg?react";
+import TwitterIcon from "../assets/svg/twitter.svg?react";
 
 const Contact = () => {
   return (
@@ -22,9 +22,6 @@ const Contact = () => {
             <div className="contact-socials">
               <a href="#">
                 <TwitterIcon />
-              </a>
-              <a href="#">
-                <DiscordIcon />
               </a>
               <a href="#">
                 <TelegramIcon />

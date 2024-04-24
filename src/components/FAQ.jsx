@@ -4,11 +4,11 @@ import {
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
-} from 'react-accessible-accordion';
-import FAQRightDecorator from '../assets/images/faq-right-decorator.png';
-import FAQLeftDecorator from '../assets/images/faq-left-decorator.png';
-import FAQSeperator from '../assets/images/faq-seperator.png';
-import ArrowRight from '../assets/svg/arrow-right.svg?react';
+} from "react-accessible-accordion";
+import FAQRightDecorator from "../assets/images/faq-right-decorator.png";
+import FAQLeftDecorator from "../assets/images/faq-left-decorator.png";
+import FAQSeperator from "../assets/images/faq-seperator.png";
+import ArrowRight from "../assets/svg/arrow-right.svg?react";
 
 export default function FAQ() {
   return (
@@ -24,80 +24,70 @@ export default function FAQ() {
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton className="accordion-btn">
-                    What is the supply?
+                    What steps do I take to start earing $DNA?
                     <ArrowRight />
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordion-panel">
                   <p>
-                    Exercitation in fugiat est ut ad ea cupidatat ut in
-                    cupidatat occaecat ut occaecat consequat est minim minim
-                    esse tempor laborum consequat esse adipisicing eu
-                    reprehenderit enim.
+                    WaterBear holders can start earning $DNA right now, click
+                    the stake tab to begin.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton className="accordion-btn">
-                    What is the supply?
+                    Can tardigrades survive in outer space?
+                    <ArrowRight />
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="accordion-panel">
+                  <p>yes</p>
+                </AccordionItemPanel>
+              </AccordionItem>
+              <AccordionItem>
+                <AccordionItemHeading>
+                  <AccordionItemButton className="accordion-btn">
+                    What is an Test tube? How does it work?
                     <ArrowRight />
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordion-panel">
                   <p>
-                    Exercitation in fugiat est ut ad ea cupidatat ut in
-                    cupidatat occaecat ut occaecat consequat est minim minim
-                    esse tempor laborum consequat esse adipisicing eu
-                    reprehenderit enim.
+                    An test tube is an NFT that represents a Baby WaterBear.
+                    Test tubes can be left unopened (unrevealed Baby) and traded
+                    like any other WaterBear. In order to reveal your Baby, you
+                    can go to the Breed section and open your test tube.
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton className="accordion-btn">
-                    What is the supply?
+                    How do I get a WaterBear?
                     <ArrowRight />
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordion-panel">
                   <p>
-                    Exercitation in fugiat est ut ad ea cupidatat ut in
-                    cupidatat occaecat ut occaecat consequat est minim minim
-                    esse tempor laborum consequat esse adipisicing eu
-                    reprehenderit enim.
+                    Secure your spot in our whitelist to participate in the
+                    upcoming Mint!
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>
               <AccordionItem>
                 <AccordionItemHeading>
                   <AccordionItemButton className="accordion-btn">
-                    What is the supply?
+                    What are the contract addresses?
                     <ArrowRight />
                   </AccordionItemButton>
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordion-panel">
                   <p>
-                    Exercitation in fugiat est ut ad ea cupidatat ut in
-                    cupidatat occaecat ut occaecat consequat est minim minim
-                    esse tempor laborum consequat esse adipisicing eu
-                    reprehenderit enim.
-                  </p>
-                </AccordionItemPanel>
-              </AccordionItem>
-              <AccordionItem>
-                <AccordionItemHeading>
-                  <AccordionItemButton className="accordion-btn">
-                    What is the supply?
-                    <ArrowRight />
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel className="accordion-panel">
-                  <p>
-                    Exercitation in fugiat est ut ad ea cupidatat ut in
-                    cupidatat occaecat ut occaecat consequat est minim minim
-                    esse tempor laborum consequat esse adipisicing eu
-                    reprehenderit enim.
+                    WaterBears: https://dashboard.radixdlt.com/ $BANANA (ETH AND
+                    POLYGON):
+                    https://ociswap.com/resource_rdx1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxradxrd
                   </p>
                 </AccordionItemPanel>
               </AccordionItem>

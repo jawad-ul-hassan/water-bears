@@ -1,9 +1,9 @@
-import ComingSoonRightDecorator from '../assets/images/coming-soon-right-decorator.png';
-import ComingSoonLeftDecorator from '../assets/images/coming-soon-left-decorator.png';
-import ComingSoonBearHat from '../assets/images/hero-bear-md.png';
-import ComingSoonBearWithoutHat from '../assets/images/hero-bear-sm.png';
-import Coin from '../assets/images/coin.png';
-import RightArrow from '../assets/svg/right-arrow.svg?react';
+import ComingSoonRightDecorator from "../assets/images/coming-soon-right-decorator.png";
+import ComingSoonLeftDecorator from "../assets/images/coming-soon-left-decorator.png";
+import ComingSoonBearHat from "../assets/images/hero-bear-md.png";
+import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
+import Coin from "../assets/images/coin.png";
+import RightArrow from "../assets/svg/right-arrow.svg?react";
 
 const ComingSoon = () => {
   return (
@@ -16,7 +16,7 @@ const ComingSoon = () => {
             className="coming-soon-left-decorator"
           />
           <div className="coming-soon-wrapper">
-            <h3 className="coming-soon-subtitle">tardigrades ARE</h3>
+            {/* <h3 className="coming-soon-subtitle">tardigrades ARE</h3> */}
             <h1 className="coming-soon-title">COMMING soon</h1>
             <p className="coming-soon-text">
               WaterBears is collection of 3,333 algorithmically generated
@@ -30,9 +30,10 @@ const ComingSoon = () => {
 
             <div className="coming-soon-guide">
               <p className="coming-soon-guide-text">
-                Hold any two Genesis WaterBears in your wallet and burn 300 $DNA
+                Each test tube can be minted into a baby WaterBear. Baby
+                WaterBears has
                 <span className="coming-soon-guide-text-br">
-                  to receive a test tube
+                  a supply of 6,666 supply
                 </span>
               </p>
               <div className="coming-soon-guide-box">
@@ -46,9 +47,9 @@ const ComingSoon = () => {
                 </div>
               </div>
               <p className="coming-soon-guide-text">
-                Hold any two Genesis WaterBears in your wallet and burn 300 $DNA
+                1 $DNA = 1 $DNA DNA is not an investment and has
                 <span className="coming-soon-guide-text-br">
-                  to receive a test tube
+                  no financial value
                 </span>
               </p>
               <div className="coming-soon-guide-box">
