@@ -539,6 +539,40 @@ h3 {
   font-size: var(--regular-fs);
 }
 
+/*=============== No Match ===============*/
+.no-match {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: calc(32rem / 16);
+  padding: 0 calc(32rem / 16);
+}
+
+.no-match-title {
+  color: var(--primary-color);
+  font-size: var(--bigger-fs);
+  font-weight: 400;
+  text-align: center;
+}
+
+.no-match-text {
+  text-align: center;
+}
+
+.no-match-btn {
+  font-size: var(--normal-fs);
+  background-color: #92796e;
+  padding: calc(10rem / 16) calc(16rem / 16);
+  width: calc(150rem / 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: calc(8rem / 16);
+  line-height: 1;
+}
+
 /*=============== Media Queries ===============*/
 @media (max-width: calc(1400rem/16)) {
   .hero-right-decorator,
@@ -654,6 +688,10 @@ h3 {
   .faq-title,
   .about-title {
     font-size: var(--bigger-mobile-fs);
+  }
+
+  .no-match-title {
+    font-size: var(--average-fs);
   }
 }
 
