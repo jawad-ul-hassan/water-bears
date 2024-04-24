@@ -16,8 +16,8 @@ const Contact = () => {
           />
           <div className="contact-content">
             <h3 className="contact-title">Contact Us</h3>
-            <a href="mailto:tardigrades@gmail.com" className="contact-email">
-              tardigrades@gmail.com
+            <a href="mailto:waterbears.xrd@gmail.com" className="contact-email">
+              waterbears.xrd@gmail.com
             </a>
             <div className="contact-socials">
               <a href="#">

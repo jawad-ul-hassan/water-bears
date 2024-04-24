@@ -85,8 +85,7 @@ export default function FAQ() {
                 </AccordionItemHeading>
                 <AccordionItemPanel className="accordion-panel">
                   <p>
-                    WaterBears: https://dashboard.radixdlt.com/ $BANANA (ETH AND
-                    POLYGON):
+                    WaterBears NFT https://dashboard.radixdlt.com/ $DNA (RADIX):
                     https://ociswap.com/resource_rdx1tknxxxxxxxxxradxrdxxxxxxxxx009923554798xxxxxxxxxradxrd
                   </p>
                 </AccordionItemPanel>
