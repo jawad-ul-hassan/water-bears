@@ -13,6 +13,7 @@
   --body-ff: 'VT323', monospace;
   --biggest-fs: calc(112rem / 16);
   --bigger-fs: calc(60rem / 16);
+  --bigger-mobile-fs: calc(44rem / 16);
   --average-fs: calc(32rem / 16);
   --normal-fs: calc(24rem / 16);
   --regular-fs: calc(18rem / 16);
@@ -35,7 +36,7 @@ html {
 
 body {
   font-family: var(--body-ff);
-  font-size: var(--small-fs);
+  font-size: var(--regular-fs);
   font-weight: 400;
   background-color: var(--bg-color);
   color: var(--white-color);
@@ -146,6 +147,7 @@ h3 {
 
 .hero-slider {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: calc(12rem / 16);
 }
@@ -225,7 +227,7 @@ h3 {
 }
 
 .coming-soon-guide {
-  max-width: calc(420rem / 16);
+  max-width: calc(465rem / 16);
   width: 100%;
   margin: 0 auto;
   margin-top: calc(32rem / 16);
@@ -259,6 +261,12 @@ h3 {
   width: calc(100rem / 16);
   height: calc(100rem / 16);
   border-radius: calc(8rem / 16);
+}
+
+.coming-soon-guide-coin {
+  width: calc(112rem / 16);
+  margin: 0 auto;
+  margin-top: calc(40rem / 16);
 }
 
 /*=============== Bears-Slider ===============*/
@@ -529,4 +537,160 @@ h3 {
 .footer-text {
   text-align: center;
   font-size: var(--regular-fs);
+}
+
+/*=============== Media Queries ===============*/
+@media (max-width: calc(1400rem/16)) {
+  .hero-right-decorator,
+  .hero-left-decorator {
+    width: calc(174rem / 16);
+  }
+
+  .hero-slider-lg {
+    width: calc(194rem / 16);
+    height: calc(194rem / 16);
+  }
+
+  .hero-slider-md {
+    width: calc(130rem / 16);
+    height: calc(130rem / 16);
+  }
+
+  .hero-slider-sm {
+    width: calc(90rem / 16);
+    height: calc(90rem / 16);
+  }
+
+  .coming-soon-right-decorator,
+  .coming-soon-left-decorator {
+    width: calc(155rem / 16);
+  }
+
+  .faq-right-decorator,
+  .faq-left-decorator {
+    width: calc(200rem / 16);
+  }
+}
+
+@media (max-width: calc(1100rem/16)) {
+  .header-content,
+  .coming-soon-content,
+  .faq-wrapper,
+  .contact-wrapper {
+    padding: 0;
+  }
+
+  .hero-slider-sm {
+    display: none;
+  }
+
+  .coming-soon-title {
+    font-size: var(--bigger-fs);
+  }
+
+  .faq-right-decorator,
+  .faq-left-decorator {
+    width: calc(100rem / 16);
+  }
+
+  .contact-left-decorator,
+  .contact-right-decorator {
+    width: calc(235rem / 16);
+  }
+}
+
+@media (max-width: calc(900rem/16)) {
+  .hero,
+  .faq,
+  .about,
+  .contact {
+    margin-top: calc(60rem / 16);
+  }
+
+  .hero-left-decorator,
+  .hero-right-decorator {
+    display: none;
+  }
+
+  .coming-soon-left-decorator,
+  .coming-soon-right-decorator {
+    display: none;
+  }
+
+  .coming-soon {
+    margin-bottom: calc(60rem / 16);
+  }
+
+  .bears-slider {
+    padding: calc(32rem / 16) 0;
+  }
+
+  .bears-slider-content {
+    margin-top: calc(25rem / 16);
+  }
+
+  .faq-right-decorator,
+  .faq-left-decorator {
+    display: none;
+  }
+}
+
+@media (max-width: calc(767rem/16)) {
+  .contact-left-decorator,
+  .contact-right-decorator {
+    display: none;
+  }
+
+  .header-navbar {
+    gap: calc(24rem / 16);
+  }
+}
+
+@media (max-width: calc(600rem/16)) {
+  .header-socials {
+    display: none;
+  }
+
+  .faq-title,
+  .about-title {
+    font-size: var(--bigger-mobile-fs);
+  }
+}
+
+@media (max-width: calc(524rem/16)) {
+  .hero-slider-md {
+    display: none;
+  }
+
+  .hero-slider-lg {
+    width: calc(330rem / 16);
+    height: calc(330rem / 16);
+  }
+
+  .about-members {
+    flex-direction: column;
+  }
+
+  .faq-sperator {
+    margin-top: calc(190rem / 16);
+    height: calc(47rem / 16);
+  }
+
+  .faq-seprator-image {
+    width: calc(335rem / 16);
+    top: -121px;
+  }
+
+  .coming-soon-guide-box {
+    flex-direction: column;
+    gap: calc(40rem / 16);
+  }
+
+  .coming-soon-guide-box-arrow {
+    transform: rotate(90deg);
+  }
+
+  .bears-slider-content-text {
+    font-size: var(--normal-fs);
+  }
 }

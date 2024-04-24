@@ -2,6 +2,7 @@ import ComingSoonRightDecorator from '../assets/images/coming-soon-right-decorat
 import ComingSoonLeftDecorator from '../assets/images/coming-soon-left-decorator.png';
 import ComingSoonBearHat from '../assets/images/hero-bear-md.png';
 import ComingSoonBearWithoutHat from '../assets/images/hero-bear-sm.png';
+import Coin from '../assets/images/coin.png';
 import RightArrow from '../assets/svg/right-arrow.svg?react';
 
 const ComingSoon = () => {
@@ -65,6 +66,8 @@ const ComingSoon = () => {
                   to receive a test tube
                 </span>
               </p>
+
+              <img src={Coin} alt="" className="coming-soon-guide-coin" />
             </div>
           </div>
           <img
