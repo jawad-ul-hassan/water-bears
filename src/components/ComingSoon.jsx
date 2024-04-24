@@ -60,9 +60,9 @@ const ComingSoon = () => {
                 </div>
               </div>
               <p className="coming-soon-guide-text">
-                1 $DNA = 1 $DNA DNA is not an investment and has
+                1 $DNA = 1 $DNA
                 <span className="coming-soon-guide-text-br">
-                  no financial value
+                  DNA is not an investment and has no financial value
                 </span>
               </p>
               <img src={Coin} alt="" className="coming-soon-guide-coin" />
