@@ -1,9 +1,18 @@
-import TwitterIcon from "../assets/svg/twitter.svg?react";
-import DiscordIcon from "../assets/svg/discord.svg?react";
-import TelegramIcon from "../assets/svg/telegram.svg?react";
-import WaterBearsLogo from "../assets/images/water-bears.png";
+import TwitterIcon from '../assets/svg/twitter.svg?react';
+import DiscordIcon from '../assets/svg/discord.svg?react';
+import TelegramIcon from '../assets/svg/telegram.svg?react';
+import HamburgerIcon from '../assets/svg/hamburger.svg?react';
+import CloseIcon from '../assets/svg/close.svg?react';
+import WaterBearsLogo from '../assets/images/water-bears.png';
+import { useState } from 'react';
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive); // Toggle the state
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -15,7 +24,7 @@ const Header = () => {
               className="header-logo"
             />
           </a>
-          <nav className="header-navbar">
+          <nav className={`header-navbar ${isActive ? 'active' : ''}`}>
             <a href="#home" className="header-navlink">
               Home
             </a>
@@ -43,6 +52,9 @@ const Header = () => {
               <TelegramIcon />
             </a>
           </div>
+          <button onClick={handleClick} className="header-hamburger">
+            {isActive ? <CloseIcon /> : <HamburgerIcon />}
+          </button>
         </div>
       </div>
     </header>
