@@ -30,10 +30,9 @@ const ComingSoon = () => {
 
             <div className="coming-soon-guide">
               <p className="coming-soon-guide-text">
-                Each test tube can be minted into a baby WaterBear. Baby
-                WaterBears has
+                Hold any two Genesis WaterBears in your wallet and burn 300 $DNA
                 <span className="coming-soon-guide-text-br">
-                  a supply of 6,666 supply
+                  to receive a test tube
                 </span>
               </p>
               <div className="coming-soon-guide-box">
@@ -62,10 +61,9 @@ const ComingSoon = () => {
                 </div>
               </div>
               <p className="coming-soon-guide-text">
-                Hold any two Genesis WaterBears in your wallet and burn 300 $DNA
-                <span className="coming-soon-guide-text-br">
-                  to receive a test tube
-                </span>
+                Each test tube can be minted into a baby WaterBear. Baby
+                WaterBears has a supply of 6,666 supply
+                <span className="coming-soon-guide-text-br"></span>
               </p>
 
               <img src={Coin} alt="" className="coming-soon-guide-coin" />
