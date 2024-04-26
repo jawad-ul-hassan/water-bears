@@ -1,7 +1,9 @@
 import ComingSoonRightDecorator from "../assets/images/coming-soon-right-decorator.png";
 import ComingSoonLeftDecorator from "../assets/images/coming-soon-left-decorator.png";
-import ComingSoonBearHat from "../assets/images/hero-bear-md.png";
-import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
+import ComingSoonBear1 from "../assets/images/Tardigrade10.png";
+import ComingSoonBear2 from "../assets/images/Tardigrade14.png";
+import ComingSoonBear3 from "../assets/images/Capsule2.png";
+import ComingSoonBear5 from "../assets/images/Baby2.png";
 import Coin from "../assets/images/coin.png";
 import RightArrow from "../assets/svg/right-arrow.svg?react";
 
@@ -37,12 +39,12 @@ const ComingSoon = () => {
               </p>
               <div className="coming-soon-guide-box">
                 <div className="coming-soon-guide-box-images">
-                  <img src={ComingSoonBearHat} alt="" />
-                  <img src={ComingSoonBearWithoutHat} alt="" />
+                  <img src={ComingSoonBear1} alt="" />
+                  <img src={ComingSoonBear2} alt="" />
                 </div>
                 <RightArrow className="coming-soon-guide-box-arrow" />
                 <div className="coming-soon-guide-box-images">
-                  <img src={ComingSoonBearWithoutHat} alt="" />
+                  <img src={ComingSoonBear3} alt="" />
                 </div>
               </div>
               <p className="coming-soon-guide-text">
@@ -52,11 +54,11 @@ const ComingSoon = () => {
               </p>
               <div className="coming-soon-guide-box">
                 <div className="coming-soon-guide-box-images">
-                  <img src={ComingSoonBearWithoutHat} alt="" />
+                  <img src={ComingSoonBear3} alt="" />
                 </div>
                 <RightArrow className="coming-soon-guide-box-arrow" />
                 <div className="coming-soon-guide-box-images">
-                  <img src={ComingSoonBearWithoutHat} alt="" />
+                  <img src={ComingSoonBear5} alt="" />
                 </div>
               </div>
               <p className="coming-soon-guide-text">
