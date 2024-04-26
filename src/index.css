@@ -10,7 +10,7 @@
   --bg-black-light: #2b2b2b;
 
   /*========== Font and Typography ==========*/
-  --body-ff: 'VT323', monospace;
+  --body-ff: "VT323", monospace;
   --biggest-fs: calc(112rem / 16);
   --bigger-fs: calc(60rem / 16);
   --bigger-mobile-fs: calc(44rem / 16);
@@ -305,7 +305,7 @@ h3 {
 }
 
 .bears-slider::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -320,7 +320,7 @@ h3 {
 }
 
 .bears-slider::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -338,7 +338,7 @@ h3 {
   width: 95%;
   height: calc(200rem / 16);
   border-radius: calc(8rem / 16);
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .bears-slide-heart {
@@ -536,7 +536,7 @@ h3 {
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
