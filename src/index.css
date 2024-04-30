@@ -10,7 +10,7 @@
   --bg-black-light: #2b2b2b;
 
   /*========== Font and Typography ==========*/
-  --body-ff: 'VT323', monospace;
+  --body-ff: "VT323", monospace;
   --biggest-fs: calc(112rem / 16);
   --bigger-fs: calc(60rem / 16);
   --bigger-mobile-fs: calc(44rem / 16);
@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   background-color: var(--bg-color);
   color: var(--white-color);
-  line-height: 1.5;
+  line-height: 1.35;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -89,6 +89,7 @@ h3 {
 /*=============== Header ===============*/
 .header {
   padding: calc(24rem / 16) 0 0 0;
+  position: relative;
 }
 
 .header-content {
@@ -107,6 +108,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: calc(56rem / 16);
+  transition: all 300ms ease-in-out;
 }
 
 .header-navlink {
@@ -117,6 +119,20 @@ h3 {
   display: flex;
   align-items: center;
   gap: calc(16rem / 16);
+}
+
+.header-hamburger {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  width: calc(36rem / 16);
+  height: calc(36rem / 16);
+  cursor: pointer;
+}
+
+.header-hamburger > svg {
+  width: 100%;
+  height: 100%;
 }
 
 /*=============== Hero ===============*/
@@ -289,7 +305,7 @@ h3 {
 }
 
 .bears-slider::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -304,7 +320,7 @@ h3 {
 }
 
 .bears-slider::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -322,7 +338,7 @@ h3 {
   width: 95%;
   height: calc(200rem / 16);
   border-radius: calc(8rem / 16);
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .bears-slide-heart {
@@ -520,7 +536,7 @@ h3 {
 }
 
 .footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -667,6 +683,10 @@ h3 {
   .faq-left-decorator {
     display: none;
   }
+
+  .header-navbar {
+    gap: calc(32rem / 16);
+  }
 }
 
 @media (max-width: calc(767rem/16)) {
@@ -675,16 +695,37 @@ h3 {
     display: none;
   }
 
-  .header-navbar {
-    gap: calc(24rem / 16);
-  }
-}
-
-@media (max-width: calc(600rem/16)) {
   .header-socials {
     display: none;
   }
 
+  .header-hamburger {
+    display: block;
+  }
+
+  .header {
+    padding-bottom: calc(24rem / 16);
+  }
+
+  .header-navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--bg-black-light);
+    padding: calc(16rem / 16) calc(32rem / 16);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    gap: calc(16rem / 16);
+  }
+
+  .header-navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: calc(600rem/16)) {
   .faq-title,
   .about-title {
     font-size: var(--bigger-mobile-fs);

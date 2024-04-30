@@ -1,8 +1,8 @@
-import ContactLeftDecorator from '../assets/images/contact-left-decorator.png';
-import ContactRightDecorator from '../assets/images/contact-right-decorator.png';
-import DiscordIcon from '../assets/svg/discord.svg?react';
-import TelegramIcon from '../assets/svg/telegram.svg?react';
-import TwitterIcon from '../assets/svg/twitter.svg?react';
+import ContactLeftDecorator from "../assets/images/contact-left-decorator.png";
+import ContactRightDecorator from "../assets/images/contact-right-decorator.png";
+import DiscordIcon from "../assets/svg/discord.svg?react";
+import TelegramIcon from "../assets/svg/telegram.svg?react";
+import TwitterIcon from "../assets/svg/twitter.svg?react";
 
 const Contact = () => {
   return (
@@ -16,15 +16,12 @@ const Contact = () => {
           />
           <div className="contact-content">
             <h3 className="contact-title">Contact Us</h3>
-            <a href="mailto:tardigrades@gmail.com" className="contact-email">
-              tardigrades@gmail.com
+            <a href="mailto:waterbears.xrd@gmail.com" className="contact-email">
+              waterbears.xrd@gmail.com
             </a>
             <div className="contact-socials">
               <a href="#">
                 <TwitterIcon />
-              </a>
-              <a href="#">
-                <DiscordIcon />
               </a>
               <a href="#">
                 <TelegramIcon />
