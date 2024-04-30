@@ -1,10 +1,10 @@
-import TwitterIcon from '../assets/svg/twitter.svg?react';
-import DiscordIcon from '../assets/svg/discord.svg?react';
-import TelegramIcon from '../assets/svg/telegram.svg?react';
-import HamburgerIcon from '../assets/svg/hamburger.svg?react';
-import CloseIcon from '../assets/svg/close.svg?react';
-import WaterBearsLogo from '../assets/images/water-bears.png';
-import { useState } from 'react';
+import TwitterIcon from "../assets/svg/twitter.svg?react";
+import DiscordIcon from "../assets/svg/discord.svg?react";
+import TelegramIcon from "../assets/svg/telegram.svg?react";
+import HamburgerIcon from "../assets/svg/hamburger.svg?react";
+import CloseIcon from "../assets/svg/close.svg?react";
+import WaterBearsLogo from "../assets/images/water-bears.png";
+import { useState } from "react";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -24,8 +24,8 @@ const Header = () => {
               className="header-logo"
             />
           </a>
-          <nav className={`header-navbar ${isActive ? 'active' : ''}`}>
-            <a href="#home" className="header-navlink">
+          <nav className={`header-navbar ${isActive ? "active" : ""}`}>
+            <a href="/" className="header-navlink">
               Home
             </a>
             <a href="#faq" className="header-navlink">
@@ -34,7 +34,7 @@ const Header = () => {
             <a href="#about" className="header-navlink">
               About
             </a>
-            <a href="#mint" className="header-navlink">
+            <a href="/mint" className="header-navlink">
               Mint
             </a>
             <a href="#breed" className="header-navlink">
@@ -48,7 +48,7 @@ const Header = () => {
             <a href="#">
               <TwitterIcon />
             </a>
-            <a href="#">
+            <a href="https://t.me/WaterBearsXRD">
               <TelegramIcon />
             </a>
           </div>
