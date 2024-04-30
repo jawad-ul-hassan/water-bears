@@ -1,7 +1,32 @@
+import { useState } from 'react';
 import HeroLeftDecorator from '../assets/images/hero-left-decorator.png';
 import HeroRightDecorator from '../assets/images/hero-right-decorator.png';
 
 export const MintHero = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(prevCount => Math.min(prevCount + 1, 10000)); // Limit to 10000
+  };
+
+  const decrement = () => {
+    setCount(prevCount => Math.max(prevCount - 1, 0)); // Limit to 0
+  };
+
+  const handleChange = event => {
+    const newCount = parseInt(event.target.value, 10);
+    if (isNaN(newCount) || newCount < 0 || newCount > 10000) {
+      return; // Ignore invalid input
+    }
+    setCount(newCount);
+  };
+
+  const handleFocus = () => {
+    if (count === 0) {
+      setCount(''); // Clear input value on focus only if it's 0
+    }
+  };
+
   return (
     <section className="hero">
       <div className="container">
@@ -19,12 +44,23 @@ export const MintHero = () => {
               </p>
               <div className="hero-mint-field">
                 <div className="hero-mint-total">
-                  <span>0</span>/<span>10,000</span>
+                  <span>{count}</span>/<span>10,000</span>
                 </div>
                 <div className="hero-mint-no-field">
-                  <button className="hero-mint-no-less">-</button>
-                  <input type="number" name="mint" id="mint" />
-                  <button className="hero-mint-no-more">+</button>
+                  <button className="hero-mint-no-less" onClick={decrement}>
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    name="mint"
+                    id="mint"
+                    value={count} // Set initial value from state
+                    onChange={handleChange}
+                    onFocus={handleFocus}
+                  />
+                  <button className="hero-mint-no-more" onClick={increment}>
+                    +
+                  </button>
                 </div>
                 <button className="hero-mint-btn">Mint Now</button>
               </div>
