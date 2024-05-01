@@ -1,7 +1,15 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import ComingSoonBearHat from '../assets/images/hero-bear-md.png';
-import ComingSoonBearWithoutHat from '../assets/images/hero-bear-sm.png';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Bear2 from "../assets/images/waterbear-_2.png";
+import Bear3 from "../assets/images/waterbear-_3.png";
+import Bear4 from "../assets/images/waterbear-_4.png";
+import Bear5 from "../assets/images/waterbear-_5.png";
+import Bear6 from "../assets/images/waterbear-_6.png";
+import Bear8 from "../assets/images/waterbear-_8.png";
+import Bear9 from "../assets/images/waterbear-_9.png";
+import Bear10 from "../assets/images/waterbear-_10.png";
+import ComingSoonBearHat from "../assets/images/hero-bear-md.png";
+import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
 
 const MintSlider = () => {
   return (
@@ -59,30 +67,14 @@ const MintSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
+        <img src={Bear2} alt="" className="bears-slider-image" />
+        <img src={Bear3} alt="" className="bears-slider-image" />
+        <img src={Bear4} alt="" className="bears-slider-image" />
+        <img src={Bear5} alt="" className="bears-slider-image" />
+        <img src={Bear6} alt="" className="bears-slider-image" />
+        <img src={Bear8} alt="" className="bears-slider-image" />
+        <img src={Bear9} alt="" className="bears-slider-image" />
+        <img src={Bear10} alt="" className="bears-slider-image" />
         <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
         <img
           src={ComingSoonBearWithoutHat}

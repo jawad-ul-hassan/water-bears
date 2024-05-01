@@ -23,7 +23,7 @@ const Contact = () => {
               <a href="#">
                 <TwitterIcon />
               </a>
-              <a href="#">
+              <a href="https://t.me/WaterBearsXRD">
                 <TelegramIcon />
               </a>
             </div>
