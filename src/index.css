@@ -339,7 +339,6 @@ h6 {
 
 .bears-slider-image {
   width: 95%;
-  height: calc(200rem / 16);
   border-radius: calc(8rem / 16);
   /* object-fit: cover; */
 }
