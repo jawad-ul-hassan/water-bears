@@ -1,6 +1,6 @@
 import HeroLeftDecorator from "../assets/images/hero-left-decorator.png";
 import HeroRightDecorator from "../assets/images/hero-right-decorator.png";
-import HeroSliderLg from "../assets/images/Tardigrade19.png";
+import HeroSliderLg from "../assets/images/waterbear-_1.png";
 import HeroSliderMd1 from "../assets/images/Tardigrade9.png";
 import HeroSliderMd2 from "../assets/images/Tardigrade7.png";
 import HeroSliderSm from "../assets/images/hero-bear-sm.png";
