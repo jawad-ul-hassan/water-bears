@@ -67,25 +67,25 @@ const MintSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        <img src={Bear2} alt="" className="bears-slider-image" />
-        <img src={Bear3} alt="" className="bears-slider-image" />
-        <img src={Bear4} alt="" className="bears-slider-image" />
-        <img src={Bear5} alt="" className="bears-slider-image" />
-        <img src={Bear6} alt="" className="bears-slider-image" />
-        <img src={Bear8} alt="" className="bears-slider-image" />
-        <img src={Bear9} alt="" className="bears-slider-image" />
-        <img src={Bear10} alt="" className="bears-slider-image" />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
+        <img src={Bear2} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear3} alt=""   style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear4} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear5} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear6} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear8} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear9} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={Bear10} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
+        <img src={ComingSoonBearHat}  style={{ maxWidth: '150px',borderRadius:'15px' }} alt="" className="bears-slider-image" />
         <img
           src={ComingSoonBearWithoutHat}
           alt=""
-          className="bears-slider-image"
+          className="bears-slider-image"  style={{ maxWidth: '150px',borderRadius:'15px' }}
         />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
+        <img src={ComingSoonBearHat} alt="" className="bears-slider-image"   style={{ maxWidth: '150px',borderRadius:'15px' }}/>
         <img
           src={ComingSoonBearWithoutHat}
           alt=""
-          className="bears-slider-image"
+          className="bears-slider-image"  style={{ maxWidth: '150px',borderRadius:'15px' }}
         />
       </Carousel>
     </section>

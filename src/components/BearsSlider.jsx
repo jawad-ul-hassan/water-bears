@@ -13,6 +13,7 @@ import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
 import Heart from "../assets/svg/heart.svg?react";
 
 const BearsSlider = () => {
+
   return (
     <section className="bears-slider">
       <Carousel
@@ -68,26 +69,18 @@ const BearsSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        <img src={Bear2} alt="" className="bears-slider-image" />
-        <img src={Bear3} alt="" className="bears-slider-image" />
-        <img src={Bear4} alt="" className="bears-slider-image" />
-        <img src={Bear5} alt="" className="bears-slider-image" />
-        <img src={Bear6} alt="" className="bears-slider-image" />
-        <img src={Bear8} alt="" className="bears-slider-image" />
-        <img src={Bear9} alt="" className="bears-slider-image" />
-        <img src={Bear10} alt="" className="bears-slider-image" />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"
-        />
+           <img src={Bear2} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear3} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear4} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear5} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear6} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear8} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear9} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear10} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={ComingSoonBearHat} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={ComingSoonBearWithoutHat} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={ComingSoonBearHat} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={ComingSoonBearWithoutHat} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
       </Carousel>
 
       <div className="bears-slider-content">
