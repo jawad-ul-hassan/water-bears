@@ -12,8 +12,6 @@ const Mint = () => {
       <Header />
       <main>
         <MintHero />
-        <ComingSoon />
-
         <MintSlider />
         <Contact />
       </main>
