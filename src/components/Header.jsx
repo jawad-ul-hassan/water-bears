@@ -37,10 +37,10 @@ const Header = () => {
             <a href="/mint" className="header-navlink">
               Mint
             </a>
-            <a href="#breed" className="header-navlink">
+            <a href="/breed" className="header-navlink">
               Breed
             </a>
-            <a href="#stake" className="header-navlink">
+            <a href="/stake" className="header-navlink">
               Stake
             </a>
           </nav>
