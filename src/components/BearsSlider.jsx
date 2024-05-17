@@ -71,7 +71,7 @@ const BearsSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-           <img src={Bear2} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear2} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
         <img src={Bear3} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
         <img src={Bear4} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
         <img src={Bear5} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />

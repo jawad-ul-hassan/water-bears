@@ -1,15 +1,15 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Bear2 from "../assets/images/waterbear-_2.png";
-import Bear3 from "../assets/images/waterbear-_3.png";
-import Bear4 from "../assets/images/waterbear-_4.png";
-import Bear5 from "../assets/images/waterbear-_5.png";
-import Bear6 from "../assets/images/waterbear-_6.png";
-import Bear8 from "../assets/images/waterbear-_8.png";
-import Bear9 from "../assets/images/waterbear-_9.png";
-import Bear10 from "../assets/images/waterbear-_10.png";
-import ComingSoonBearHat from "../assets/images/hero-bear-md.png";
-import ComingSoonBearWithoutHat from "../assets/images/hero-bear-sm.png";
+import Bear2 from "../assets/images/new_images/8bits.png";
+import Bear3 from "../assets/images/new_images/Angel.png";
+import Bear4 from "../assets/images/new_images/Astral.png";
+import Bear5 from "../assets/images/new_images/Cyborg.png";
+import Bear6 from "../assets/images/new_images/Devil.png";
+import Bear7 from "../assets/images/new_images/Earth.png";
+import Bear8 from "../assets/images/new_images/Eletric.png";
+import Bear9 from "../assets/images/new_images/Fire.png";
+import Bear10 from "../assets/images/new_images/Ice.png";
+import Bear11 from "../assets/images/new_images/Skull.png";
 
 const MintSlider = () => {
   return (
@@ -67,26 +67,16 @@ const MintSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        <img src={Bear2} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear3} alt=""   style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear4} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear5} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear6} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear8} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear9} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={Bear10} alt=""  style={{ maxWidth: '150px',borderRadius:'15px' }} className="bears-slider-image" />
-        <img src={ComingSoonBearHat}  style={{ maxWidth: '150px',borderRadius:'15px' }} alt="" className="bears-slider-image" />
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"  style={{ maxWidth: '150px',borderRadius:'15px' }}
-        />
-        <img src={ComingSoonBearHat} alt="" className="bears-slider-image"   style={{ maxWidth: '150px',borderRadius:'15px' }}/>
-        <img
-          src={ComingSoonBearWithoutHat}
-          alt=""
-          className="bears-slider-image"  style={{ maxWidth: '150px',borderRadius:'15px' }}
-        />
+        <img src={Bear2} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear3} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear4} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear5} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear6} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear7} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear8} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear9} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear10} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
+        <img src={Bear11} alt="" style={{ maxWidth: '150px',borderRadius:'15px' }} />
       </Carousel>
     </section>
   );
