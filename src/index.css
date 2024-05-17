@@ -917,6 +917,7 @@ h6 {
     padding: calc(16rem / 16) calc(32rem / 16);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     gap: calc(16rem / 16);
+    z-index: 999;
   }
 
   .header-navbar.active {
