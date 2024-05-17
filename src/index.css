@@ -1,3 +1,4 @@
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -28,13 +29,6 @@
   padding: 0;
   margin: 0;
   font-family: inherit;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
 }
 
 html {
@@ -237,9 +231,8 @@ h6 {
   font-size: var(--biggest-fs);
   text-transform: uppercase;
   text-align: center;
-  font-weight: 100 !important;
-  color:white;
-  font-family: 'Open Sans';
+  font-weight: 400;
+  color: var(--primary-color);
 }
 
 .coming-soon-text {
