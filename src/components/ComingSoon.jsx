@@ -19,7 +19,7 @@ const ComingSoon = () => {
           />
           <div className="coming-soon-wrapper">
             {/* <h3 className="coming-soon-subtitle">tardigrades ARE</h3> */}
-            <h1 className="coming-soon-title">COMMING soon</h1>
+            <h1 className="coming-soon-title">COMING soon</h1>
             <p className="coming-soon-text">
               WaterBears is collection of 3,333 algorithmically generated
               tardigrades living on the Radix Ledger. All art drawn by hand in
