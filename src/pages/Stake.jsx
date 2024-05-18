@@ -39,7 +39,7 @@ const Stake = () => {
 
               <div className="w-[202px] gap-[16px] text-center">
                 <h1 className="text-[18px] font-[400]">
-                  Total Water Bears Staked:
+                  Your WaterBears Stacked:
                 </h1>
                 <div className="flex flex-row justify-center">
                   <p className="text-[28px]">8/10</p>
@@ -61,7 +61,7 @@ const Stake = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-[858px] gap-[40px] flex flex-col">
+            <div className="w-full md:w-[858px] gap-[40px] flex flex-col mb-20">
               <div className="w-full flex flex-col md:flex-row justify-between">
                 <div className="w-[305px] gap-[29px] flex flex-row md:mx-0 mx-auto mb-10 md:mb-0">
                   <button className="w-[137px] h-[44px] rounded-lg flex items-center justify-center bg-[#42BFE8] text-[20px]">
