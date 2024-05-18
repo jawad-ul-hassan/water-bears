@@ -4,7 +4,7 @@ import heroLeftImg from "../assets/images/hero-left-decorator-removebg-preview.p
 import heroRightImg from "../assets/images/hero-right-decorator-removebg-preview.png";
 import normalBear from "../assets/images/hero-bear-lg.png";
 import stylishBear from "../assets/images/hero-bear-md.png";
-import plusIcon from "../assets/images/tabler-icon-plus.png"
+import plusIcon from "../assets/images/tabler-icon-plus.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -12,7 +12,7 @@ const Breed = () => {
   return (
     <>
       {/* Hero Section  */}
-      <Header/>
+      <Header />
       <div className="container h-full flex flex-row relative">
         <img
           className="w-[50px] md:w-[234px] md:h-[390px] absolute left-0 top-20 md:top-20"
@@ -27,7 +27,9 @@ const Breed = () => {
                 <h1 className="text-[32px] text-opacity-70">Parent X</h1>
               </div>
             </div>
-            <div className="size-[104px]  my-auto"><img src={plusIcon} alt="" /></div>
+            <div className="size-[104px]  my-auto">
+              <img src={plusIcon} alt="" />
+            </div>
             <div className="gap-[24px] w-[339px] flex flex-col">
               <img className="object-cover" src={stylishBear} alt="" />
               <div className="w-[103px] mx-auto">
@@ -50,7 +52,9 @@ const Breed = () => {
 
       <div className="w-full md:w-[858px] gap-[40px] mx-auto mb-[140px] font-[400] flex flex-col">
         <div className="w-full md:w-[560px] mx-auto">
-          <h1 className="text-[47px] md:text-[50px] w-full text-center md:text-left">Choose 2 WaterBears to Breed</h1>
+          <h1 className="text-[47px] md:text-[50px] w-full text-center md:text-left">
+            Choose 2 WaterBears to Breed
+          </h1>
         </div>
 
         <div className="w-full flex flex-col md:flex-row gap-[20px]">
@@ -112,8 +116,8 @@ const Breed = () => {
         </div>
       </div>
 
-      <Carousel />
-      <Footer/>
+      {/* <Carousel /> */}
+      <Footer />
     </>
   );
 };

@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 const Stake = () => {
   return (
     <>
-    <Header/>
+      <Header />
       {/* Hero Section  */}
       <div className="container h-full flex flex-row relative">
         <img
@@ -94,10 +94,10 @@ const Stake = () => {
       {/* Hero Section  */}
 
       {/* Carousel  */}
-      <Carousel />
+      {/* <Carousel /> */}
       {/* Carousel  */}
 
-      <Footer/>
+      <Footer />
     </>
   );
 };
