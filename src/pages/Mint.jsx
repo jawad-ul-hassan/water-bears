@@ -3,7 +3,6 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { MintHero } from '../components/MintHero';
 import MintSlider from '../components/MintSlider';
-import ComingSoon from '../components/ComingSoon';
 
 
 const Mint = () => {
