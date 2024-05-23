@@ -3,6 +3,7 @@ import DiscordIcon from "../assets/svg/discord.svg?react";
 import TelegramIcon from "../assets/svg/telegram.svg?react";
 import HamburgerIcon from "../assets/svg/hamburger.svg?react";
 import CloseIcon from "../assets/svg/close.svg?react";
+import groupImg from "../assets/images/Group.png";
 import WaterBearsLogo from "../assets/images/water-bears.png";
 import { useState } from "react";
 
@@ -45,6 +46,10 @@ const Header = () => {
             </a>
           </nav>
           <div className="header-socials">
+            <button className="connect-btn">
+              <img src={groupImg} alt="" />
+              Connect
+            </button>
             <a href="#">
               <TwitterIcon />
             </a>

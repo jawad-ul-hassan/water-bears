@@ -1,28 +1,21 @@
-import { useState } from "react";
-import HeroLeftDecorator from "../assets/images/hero-left-decorator.png";
-import HeroRightDecorator from "../assets/images/hero-right-decorator.png";
-import { useSendTransactionManifest } from "../hooks/useSendTransactionManifest";
-import { useAccounts } from "../hooks/useAccounts";
-import { AccountPicker } from "../components/base-components/account-picker/AccountPicker";
-import { useRef } from "react";
-import { useConnectButtonState } from "../hooks/useConnectButtonState";
-import { Tooltip } from "../components/base-components/tooltip/Tooltip";
-import styles from "./MintHero.module.css";
+import { useState } from 'react';
+import HeroLeftDecorator from '../assets/images/hero-left-decorator.png';
+import HeroRightDecorator from '../assets/images/hero-right-decorator.png';
 
 export const MintHero = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount((prevCount) => Math.min(prevCount + 1, 20)); // Limit to 20
+    setCount(prevCount => Math.min(prevCount + 1, 10000)); // Limit to 10000
   };
 
   const decrement = () => {
-    setCount((prevCount) => Math.max(prevCount - 1, 0)); // Limit to 0
+    setCount(prevCount => Math.max(prevCount - 1, 0)); // Limit to 0
   };
 
-  const handleChange = (event) => {
+  const handleChange = event => {
     const newCount = parseInt(event.target.value, 10);
-    if (isNaN(newCount) || newCount < 0 || newCount > 20) {
+    if (isNaN(newCount) || newCount < 0 || newCount > 10000) {
       return; // Ignore invalid input
     }
     setCount(newCount);
@@ -30,27 +23,9 @@ export const MintHero = () => {
 
   const handleFocus = () => {
     if (count === 0) {
-      setCount(""); // Clear input value on focus only if it's 0
+      setCount(''); // Clear input value on focus only if it's 0
     }
   };
-
-  const { buyWaterBear } = useSendTransactionManifest()();
-  const {
-    state: { accounts },
-  } = useAccounts();
-
-  const [state, setState] = useState({
-    hideTooltip: false,
-    isPopoverOpen: false,
-    insufficientXrdAlertDismissed: false,
-  });
-  const { selectedAccountAddress } = state;
-  const ref = useRef();
-  const connectButtonState = useConnectButtonState();
-  const showTooltip =
-    !state.hideTooltip &&
-    !state.isPopoverOpen &&
-    connectButtonState === "pending";
 
   return (
     <section className="hero">
@@ -87,48 +62,7 @@ export const MintHero = () => {
                     +
                   </button>
                 </div>
-                {!accounts.length ? (
-                  <>
-                    <div className={styles["radix-connect-button"]}>
-                      <radix-connect-button ref={ref} />
-                      {showTooltip && (
-                        <Tooltip
-                          className={styles.tooltip}
-                          onClose={() =>
-                            setState((prev) => ({ ...prev, hideTooltip: true }))
-                          }
-                        >
-                          You have a request waiting! Open your Radix Wallet
-                          mobile app to review and approve.
-                        </Tooltip>
-                      )}
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <AccountPicker
-                      className="mb-2"
-                      accounts={accounts}
-                      selected={selectedAccountAddress}
-                      onSelect={(selectedAccountAddress) =>
-                        setState((prev) => ({
-                          ...prev,
-                          selectedAccountAddress,
-                        }))
-                      }
-                    />
-                    <button
-                      className="hero-mint-btn"
-                      onClick={() =>
-                        buyWaterBear({
-                          accountAddress: selectedAccountAddress,
-                        })
-                      }
-                    >
-                      Mint Now
-                    </button>
-                  </>
-                )}
+                <button className="hero-mint-btn">Mint Now</button>
               </div>
             </div>
           </div>
