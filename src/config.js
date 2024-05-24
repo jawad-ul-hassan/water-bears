@@ -19,7 +19,7 @@ const networkConfig = {
   },
   Stokenet: {
     dAppDefinitionAddress:
-      'account_tdx_2_129nx5lgkk3fz9gqf3clppeljkezeyyymqqejzp97tpk0r8els7hg3j',
+      'account_tdx_2_12yuarmrpvd9kkl99qqk6czw8xf6rzg6h80nf7xa7gdf0fegk49a30s',
     addresses: {
       waterBearComponent:
         'component_tdx_2_1cp5a2n5y9h2neapph95t86d6g5tmvjshzk6vze0a47zkl5wuk7zq0v',
