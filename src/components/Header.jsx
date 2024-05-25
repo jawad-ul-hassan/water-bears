@@ -6,10 +6,44 @@ import CloseIcon from "../assets/svg/close.svg?react";
 import groupImg from "../assets/images/Group.png";
 import WaterBearsLogo from "../assets/images/water-bears.png";
 import { useState } from "react";
+import { useSendTransactionManifest } from "../hooks/useSendTransactionManifest";
+import { useAccounts } from "../hooks/useAccounts";
+import { AccountPicker } from "./base-components/account-picker/AccountPicker";
+import { useRef } from "react";
+import { useConnectButtonState } from "../hooks/useConnectButtonState";
+import { Tooltip } from "./base-components/tooltip/Tooltip";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
+  const { buyWaterBear } = useSendTransactionManifest();
+  const {
+    state: { accounts },
+  } = useAccounts();
+
+  const [state, setState] = useState({
+    hideTooltip: false,
+    isPopoverOpen: false,
+    insufficientXrdAlertDismissed: false,
+    selectedAccountAddress: null,
+  });
+
+  const ref = useRef();
+  const connectButtonState = useConnectButtonState();
+
+  const showTooltip =
+    !state.hideTooltip &&
+    !state.isPopoverOpen &&
+    connectButtonState === "pending";
+
+  // Add your additional logic here
+
+  const handleConnectClick = () => {
+    setState((prevState) => ({
+      ...prevState,
+      isPopoverOpen: !prevState.isPopoverOpen,
+    }));
+  };
   const handleClick = () => {
     setIsActive(!isActive); // Toggle the state
   };
@@ -46,7 +80,11 @@ const Header = () => {
             </a>
           </nav>
           <div className="header-socials">
-            <button className="connect-btn">
+            <button
+              onClick={handleConnectClick}
+              ref={ref}
+              className="connect-btn"
+            >
               <img src={groupImg} alt="" />
               Connect
             </button>
@@ -56,6 +94,24 @@ const Header = () => {
             <a href="https://t.me/WaterBearsXRD">
               <TelegramIcon />
             </a>
+            {state.isPopoverOpen && (
+              <div>
+                <AccountPicker
+                  accounts={accounts}
+                  selectedAccountAddress={state.selectedAccountAddress}
+                  onSelectAccount={(address) =>
+                    setState((prevState) => ({
+                      ...prevState,
+                      selectedAccountAddress: address,
+                      isPopoverOpen: false,
+                    }))
+                  }
+                />
+              </div>
+            )}
+            {showTooltip && (
+              <Tooltip targetRef={ref}>Connect button is pending</Tooltip>
+            )}
           </div>
           <button onClick={handleClick} className="header-hamburger">
             {isActive ? <CloseIcon /> : <HamburgerIcon />}
